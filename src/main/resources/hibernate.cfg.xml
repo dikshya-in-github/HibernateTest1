@@ -5,8 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://@gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com:4000/test
-        </property>
+        <property name="hibernate.connection.url">jdbc:mysql://@gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com:4000/test</property>
         <property name="hibernate.connection.username">4GBobmhwGqR62Pz.root</property>
         <property name="hibernate.connection.password">LZ69ElSkQENkNUX1</property>
         <property name="hibernate.connection.pool_size">1</property>
@@ -15,5 +14,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="io.virinchi.model.UserClass"/>
     </session-factory>
 </hibernate-configuration>
